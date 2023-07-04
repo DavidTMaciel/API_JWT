@@ -5,7 +5,7 @@ services:
     image: postgres:alpine
     ports:
       - "5435:5432"
-    container_name: "jwt-auth"
+    container_name: "db_postgres_evento"
     restart: always 
     volumes:
       - type: bind
@@ -17,3 +17,4 @@ services:
 
 volumes:
   db-evento:
+
